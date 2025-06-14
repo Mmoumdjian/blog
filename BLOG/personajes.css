@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #7b91f1;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #3226cf;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 90px;
+    padding: 0;
+}
+
+.logo-izquierda {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    height: 80px;
+}
+
+.navbar {
+    background-color: #0033A0;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 45px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 10px;
+    line-height: 45px;
+    transition: color 0.2s;
+    font-family: Arial, sans-serif;
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #FFD700;
+    background: none;
+}
+
+/* Grid principal */
+.disney-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #7b91f1;
+}
+
+/* Tarjeta de personaje */
+.personaje-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.personaje-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-header {
+    background: #ff6b6b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #ffd700;
+}
+
+.card-datos {
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+.card-datos p {
+    margin: 8px 0;
+    font-size: 0.9em;
+}
+
+.card-curiosidad {
+    background: #f0f8ff;
+    padding: 10px;
+    border-radius: 8px;
+    font-style: italic;
+    margin-top: auto;
+}
+
+/* Colores temáticos por personaje */
+.mickey { background: #e63946 !important; }
+.minnie { background: #ff7096 !important; }
+.donald { background: #1d3557 !important; }
+.daisy { background: #b5179e !important; }
+.goofy { background: #457b9d !important; }
+.pluto { background: #f77f00 !important; }
+.blancanieves { background: #f7c59f !important; }
+.cenicienta   { background: #b9d7f2 !important; }
+.aurora       { background: #f7b2d9 !important; }
+.ariel        { background: #6ec6e2 !important; }
+.bella        { background: #ffe082 !important; }
+.aladdin-jasmine { background: #7ed6a5 !important; }
+
+/* Responsive solo para celulares (max 600px) */
+@media (max-width: 600px) {
+    .header {
+        height: 60px;
+    }
+    .logo-izquierda {
+        height: 50px;
+        left: 10px;
+        top: 5px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding-left: 0;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 10px 0 10px 16px;
+        border-bottom: 1px solid #285AEB;
+        line-height: normal;
+    }
+    .menu a:last-child {
+        border-bottom: none;
+    }
+
+    .disney-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px 2px;
+    }
+    .card-header {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+    .card-body {
+        padding: 10px;
+    }
+    .card-image {
+        height: 120px;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Historia de Disney - Expansión de la Magia</title>
+     <link rel="stylesheet" href="historia.css">
+</head>
+<body>
+
+    <header class="header">
+        <img src="logodisney.jpg" alt="Castillo Disney" class="logo-izquierda">
+    </header>
+    <nav class="navbar">
+        <div class="menu">
+            <a href="index.html">Página principal</a>
+            <a href="historia.html" class="active">Historia</a>
+            <a href="parques.html" >Parques en Florida</a>
+            <a href="personajes.html">Personajes</a>
+            <a href="experiencias.html">Experiencias</a>
+            <a href="guiadeprecios.html" >Guia de Precios</a>
+         </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+           
+            <div class="image-column">
+               
+                <img class="disney-image" src="wym.jpg" alt="Historia de Disney"> 
+            </div>
+
+           
+            <div class="text-column">
+                <h1> La Historia de un sueño</h1>
+                
+                <h2> El inicio: Disneyland (1955)</h2>
+                <p>Todo comenzó con un hombre y un sueño. Walt Disney, creador de Mickey Mouse y pionero en el cine animado, quería construir un lugar donde niños y adultos pudieran divertirse juntos. Así nació una de las ideas más ambiciosas del siglo XX: los parques temáticos de Disney.</p>
+                
+                <p>En 1955, Walt inauguró Disneyland en Anaheim, California. Fue el primer parque temático de su tipo: limpio, seguro y mágico. Aunque fue un éxito, Walt notó que no tenía espacio para crecer y que no podía controlar el entorno que lo rodeaba.</p>
+                
+                <h2> El gran salto: Walt Disney World (1971)</h2>
+                <p>Buscando más terreno y libertad creativa, Walt ideó el"Proyecto Florida", comprando tierras en secreto cerca de Orlando. Su visión era enorme: un nuevo parque, hoteles, y una ciudad futurista llamada EPCOT. Lamentablemente, Walt murió en 1966, pero su hermano Roy O. Disney continuó el proyecto.</p>
+                
+                <p>Así nació Walt Disney World, que abrió el 1 de octubre de 1971, con el parque Magic Kingdom como atracción principal. Hoy es el complejo de parques temáticos más grande del mundo.</p>
+                
+                <h2> La expansión continúa (1971 en adelante)</h2>
+                <p>Después de la apertura de Walt Disney World en 1971, Disney no paró de crecer. El complejo en Florida fue solo el comienzo de una nueva era de innovación y expansión global.</p>
+                
+                <h3> Nuevos parques en el mundo</h3>
+                <p>Disney comenzó a llevar su magia a otros países, con acuerdos y alianzas locales. Así nacieron parques en:</p>
+                <ul>
+                    <li>Japón (1983)</li>
+                    <li>Francia (1992)</li>
+                    <li>Hong Kong (2005)</li>
+                    <li>Shanghái (2016)</li>
+                </ul>
+                <p>Cada uno adaptado a la cultura local pero con el estilo Disney intacto.</p>
+                
+                
+                <h3> Nuevas experiencias y tecnología</h3>
+                <button id="leerMasBtn" class="boton-leer-mas">Leer más</button>
+                <div id="leerMasContenido" style="display:none;">
+                    <p>En los últimos años, los parques han ido mucho más allá de los clásicos castillos y atracciones:</p>
+                    <ul>
+                        <li>Star Wars: Galaxy's Edge (2019): una tierra temática completamente inmersiva.</li>
+                        <li>Avengers Campus: dedicado al universo Marvel.</li>
+                        <li>Toy Story Land y Pandora: áreas temáticas que transportan a los visitantes dentro de películas icónicas.</li>
+                    </ul>
+    
+                    <h2> Disney hoy</h2>
+                    <p>Disney se ha convertido en mucho más que un estudio de animación o un parque temático: es un imperio del entretenimiento. Pero todo sigue girando alrededor de la misma idea que tuvo Walt en los años 50: crear lugares donde grandes y chicos puedan soñar, jugar y creer en la magia.</p>
+                </div>
+                <script>
+                    document.getElementById('leerMasBtn').onclick = function() {
+                    document.getElementById('leerMasContenido').style.display = 'block';
+                    this.style.display = 'none';
+                };  
+                </script>
+                
+        </div>
+    </div>
+</body>
+</html>

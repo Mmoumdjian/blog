@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #3226cf;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 90px;
+  padding: 0;
+}
+
+.logo-izquierda {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  height: 80px;
+}
+
+.navbar {
+  background-color: #0033A0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 45px;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 10px;
+  line-height: 45px;
+  transition: color 0.2s;
+}
+
+.menu a.active,
+.menu a:hover {
+  color: #FFD700;
+  background: none;
+}
+
+.content {
+  background-color: #7b91f1;
+  padding: 40px;
+  text-align: center;
+  height: calc(100vh - 80px);
+}
+
+h1 {
+  color: #0033A0;
+}
+
+.disney-gif {
+  margin: 30px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.site-footer {
+  background: #7c8b8f;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.social-links {
+  margin-bottom: 15px;
+}
+
+
+.copyright p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.legal-links a {
+  color: #4ab6e4;
+  font-size: 12px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Colores oficiales al hover */
+.material-icon-button:hover[href*="instagram.com"] {
+  background: radial-gradient(circle at 30% 107%, 
+    #fdf497 0%, #fdf497 5%, 
+    #fd5949 45%, #d6249f 60%, 
+    #285AEB 90%);
+}
+
+.material-icon-button:hover[href*="linkedin.com"] {
+  background: #1472d6;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 24px; 
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.material-icon-button {
+  color: #fff;
+  background: #333;
+  width: 52px;   
+  height: 52px;  
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, background 0.3s;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 60px;
+  }
+  .logo-izquierda {
+    height: 50px;
+    left: 10px;
+    top: 5px;
+  }
+ .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding-left: 0;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+  .menu a {
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px 16px;
+    border-bottom: 1px solid #285AEB;
+    line-height: normal;
+  }
+  .menu a:last-child {
+    border-bottom: none;
+  }
+
+  .content {
+    padding: 16px;
+  }
+  .disney-gif {
+    max-width: 100%;
+  }
+  .social-links a {
+    font-size: 20px;
+    margin: 0 6px;
+  }
+  .copyright p {
+    font-size: 12px;
+  }
+ 
+  .social-buttons {
+    gap: 16px; 
+  }
+  .material-icon-button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
